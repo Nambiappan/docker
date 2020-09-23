@@ -3,3 +3,26 @@ This file contains steps to install Docker on CentOS
 First, we need to uninstall, if there is any previous installed Docker
 
 Step1 : Uninstall old versions
+
+	sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-engine
+
+
+Before we install Docker Engine for the first time on a new host machine, we need to set up the Docker repository. Afterward, we can install and update Docker from the repository.
+
+Step 2 : SET UP THE REPOSITORY
+
+Install the yum-utils package (which provides the yum-config-manager utility) and set up the stable repository.
+
+	$ sudo yum install -y yum-utils
+
+	$ sudo yum-config-manager \
+    	--add-repo \
+    	https://download.docker.com/linux/centos/docker-ce.repo
+
