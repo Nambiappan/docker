@@ -1,0 +1,5 @@
+This file contains steps to install Docker on CentOS
+
+First, we need to uninstall, if there is any previous installed Docker
+
+Step1 : Uninstall old versions
