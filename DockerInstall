@@ -50,6 +50,17 @@ Install the latest version of Docker Engine and containerd,
 	  $ sudo yum install docker-ce-<VERSION_STRING> docker-ce-cli-<VERSION_STRING> containerd.io
        
        
+ 
+ Step 4 : Start Docker
+ 
+       $ sudo systemctl start docker
+       
+       
+ Step 5 : Verify the Docker Engine is installed.
+ 
+      $ sudo docker run hello-world
+ 
+       
 
 
 
