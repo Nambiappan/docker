@@ -45,7 +45,9 @@ Install the latest version of Docker Engine and containerd,
 		docker-ce.x86_64  18.06.1.ce-3.el7                    docker-ce-stable
 		docker-ce.x86_64  18.06.0.ce-3.el7                    docker-ce-stable
 		
-	-
+	- Once the stable version is identfied then use that version in the command to install the specific version.
+	
+	  $ sudo yum install docker-ce-<VERSION_STRING> docker-ce-cli-<VERSION_STRING> containerd.io
        
        
 
